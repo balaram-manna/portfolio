@@ -899,6 +899,7 @@ span {
     }
 }
 
+/*TABLET / SMALL DESKTOP*/
 @media (max-width: 991px) {
     .header {
         padding: 2rem 3%;
@@ -933,6 +934,7 @@ span {
     }
 }
 
+/*TABLET / MOBILE*/
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
@@ -1017,13 +1019,16 @@ span {
     }
 
     .footer {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
-        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 2rem 1rem;
     }
 }
 
-
+/*PROJECTS GRID ON MOBILE*/
 @media (max-width: 617px) {
     .projects-container {
         grid-template-columns: 1fr;
@@ -1031,7 +1036,7 @@ span {
 } 
 
 
-
+/*MOBILE*/
 @media (max-width: 450px) {
     html {
         font-size: 50%;
@@ -1040,24 +1045,69 @@ span {
     .contact form .input-box input {
         width: 100%;
     }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .footer-text {
+        width: 100%;
+        order: 2;
+        text-align: center;
+    }
+
+    .footer-text p {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .footer .visitor-counter {
+        display: inline;
+        white-space: nowrap;
+    }
+
+    .footer-iconTop {
+        margin: 0;
+        order: 1;
+    }
+
+    .footer-iconTop a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
+/*SMALL MOBILE*/
 @media (max-width: 365px) {
     .home-img img {
         width: 75vw;
     }
 
     .footer {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .footer p {
         text-align: center;
-        margin-top: 2rem;
+        white-space: nowrap;
+        font-size: 1.1rem;
     }
-}
 
+    .footer .visitor-counter {
+        display: inline;
+    }  
+}
 
 
 
