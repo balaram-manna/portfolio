@@ -304,6 +304,18 @@ body {
     .back-home {
         font-size: 1.3rem;
         padding: 0.8rem 1.2rem;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .back-home i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        line-height: 1;
     }
 
     .maintenance-container {
@@ -318,6 +330,7 @@ body {
     .animation-container {
         height: 27rem;
         margin-top: 3rem;
+        overflow: hidden;
     }
 
     .progress-section {
@@ -332,19 +345,29 @@ body {
     }
 
     .back-home {
-        padding: 0.7rem 1rem;
-    }
-
-    .back-home i {
-        font-size: 1.8rem;
-    }
-
-    .back-home {
+        width: 5rem;
+        position: relative;
+        height: 5rem;
+        padding: 0;
         font-size: 0;
+        display: block;
+        margin: 0;
     }
 
     .back-home i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+        display: block;
         font-size: 2.2rem;
+        line-height: 1;
     }
 
     .maintenance-container {
@@ -369,6 +392,7 @@ body {
         height: 24rem;
         border-radius: 1.5rem;
         margin-top: 2.5rem;
+        overflow: hidden;
     }
 
     .progress-section {
@@ -384,8 +408,7 @@ body {
         flex-direction: column;
     }
 
-    .home-btn,
-    .contact-btn {
+    .home-btn {
         width: min(25rem, 90%);
     }
 

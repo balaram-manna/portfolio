@@ -860,56 +860,180 @@ animationStyles.textContent = `
     white-space: nowrap;
 }
 
-
 /* =========================================================
    MOBILE ANIMATION ADJUSTMENTS
 ========================================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
+
+    /* =========================
+       CRANE
+    ========================= */
+
+    .crane {
+        left: 8%;
+        bottom: 14%;
+        width: 4rem;
+        height: 14rem;
+    }
+
+    .crane-tower {
+        width: 1.6rem;
+        height: 14rem;
+    }
+
     .crane-arm {
-        width: 20rem;
+        width: 17rem;
     }
+
     .crane-cable {
-        left: 14rem;
+        left: 11rem;
+        height: 8rem;
     }
+
     .crane-hook {
-        left: 12.8rem;
+        left: 9.8rem;
+        top: 8rem;
+        font-size: 1.7rem;
     }
+
     .building {
-        width: 13rem;
-        height: 10rem;
+        right: 5%;
+        bottom: 14%;
+        width: 10rem;
+        height: 8rem;
+        padding: 0.5rem;
     }
+
+
+    /* =========================
+       DEVELOPER VACATION
+    ========================= */
+
+    .sun {
+        top: 2rem;
+        right: 2rem;
+        font-size: 3rem;
+    }
+
     .palm-tree {
-        font-size: 7rem;
-        left: 5%;
+        left: 3%;
+        bottom: 15%;
+        font-size: 5.5rem;
     }
+
     .developer-vacation {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
+
     .vacation-chair {
-        font-size: 5rem;
-    }
-    .builder-character {
-        font-size: 6rem;
-    }
-    .hammer {
-        left: 35%;
-        font-size: 4rem;
-    }
-    .wall {
-        width: 14rem;
-        height: 9rem;
-    }
-    .sleeping-developer {
-        font-size: 6rem;
-    }
-    .forgotten-laptop {
-        font-size: 5rem;
         right: 12%;
+        bottom: 14%;
+        font-size: 4.5rem;
     }
+
+    .vacation-drink {
+        right: 4%;
+        bottom: 16%;
+        font-size: 3rem;
+    }
+
+
+    /* =========================
+       BUILDER
+    ========================= */
+
+    .builder-character {
+        left: 12%;
+        bottom: 15%;
+        font-size: 5.5rem;
+    }
+
+    .hammer {
+        left: 30%;
+        bottom: 36%;
+        font-size: 3.5rem;
+    }
+
+    .wall {
+        right: 5%;
+        bottom: 15%;
+        width: 11rem;
+        height: 8rem;
+    }
+
+    .dust {
+        font-size: 2.3rem;
+    }
+
+    .dust-one {
+        left: 45%;
+    }
+
+    .dust-two {
+        left: 50%;
+    }
+
+    .dust-three {
+        left: 55%;
+    }
+
+
+    /* =========================
+       PROJECT PAUSED
+    ========================= */
+
+    .pause-icon {
+        font-size: 6rem;
+    }
+
+    .warning-icon {
+        top: 2rem;
+        right: 2rem;
+        font-size: 3rem;
+    }
+
+    .paused-building {
+        left: 2rem;
+        bottom: 2rem;
+        font-size: 5rem;
+    }
+
+    .paused-text {
+        bottom: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+
+    /* =========================
+       FORGOTTEN PROJECT
+    ========================= */
+
+    .sleeping-developer {
+        font-size: 5.5rem;
+    }
+
+    .forgotten-laptop {
+        right: 8%;
+        bottom: 15%;
+        font-size: 4.5rem;
+    }
+
+    .sleep-z {
+        right: 35%;
+        top: 20%;
+        font-size: 2.5rem;
+    }
+
+
+    /* =========================
+       COMMON LABEL
+    ========================= */
+
     .scene-label {
-        font-size: 1rem;
-        bottom: 1rem;
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+        bottom: 0.8rem;
     }
 }
 `;
