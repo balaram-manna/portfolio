@@ -899,6 +899,7 @@ span {
     }
 }
 
+
 /*TABLET / SMALL DESKTOP*/
 @media (max-width: 991px) {
     .header {
@@ -934,7 +935,8 @@ span {
     }
 }
 
-/*TABLET / MOBILE*/
+
+/* TABLET / MOBILE */
 @media (max-width: 768px) {
     #menu-icon {
         display: block;
@@ -1028,6 +1030,7 @@ span {
     }
 }
 
+
 /*PROJECTS GRID ON MOBILE*/
 @media (max-width: 617px) {
     .projects-container {
@@ -1036,7 +1039,7 @@ span {
 } 
 
 
-/*MOBILE*/
+/* MOBILE */
 @media (max-width: 450px) {
     html {
         font-size: 50%;
@@ -1066,7 +1069,7 @@ span {
         margin: 0;
         text-align: center;
         white-space: nowrap;
-        font-size: 1.3rem;
+        font-size: 1.25rem;
         line-height: 1.5;
     }
 
@@ -1106,8 +1109,9 @@ span {
 
     .footer .visitor-counter {
         display: inline;
-    }  
+    }
 }
+
 
 
 
