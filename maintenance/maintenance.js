@@ -40,7 +40,7 @@ const maintenanceStates = [
         progress: 25,
         title: "Construction in Progress",
         message: "The project is currently under construction. Our crane is working on it!",
-        image: "images/crane.png"
+        image: "../images/crane.png"
     },
 
     {
@@ -48,7 +48,7 @@ const maintenanceStates = [
         progress: 20,
         title: "Developer Went on Vacation",
         message: "The developer has temporarily escaped reality. Work will resume soon!",
-        image: "images/vacation.png"
+        image: "../images/vacation.png"
     },
 
     {
@@ -56,7 +56,7 @@ const maintenanceStates = [
         progress: 15,
         title: "Builder Is Working Hard",
         message: "Someone is still working on it... one hammer at a time!",
-        image: "images/builder.png"
+        image: "../images/builder.png"
     },
 
     {
@@ -64,7 +64,7 @@ const maintenanceStates = [
         progress: 10,
         title: "Project Temporarily Paused",
         message: "This project is temporarily paused due to external policy constraints!",
-        image: "images/paused.png"
+        image: "../images/paused.png"
     },
 
     {
@@ -72,7 +72,7 @@ const maintenanceStates = [
         progress: 0,
         title: "Developer Forgot This Project",
         message: "The developer completely forgot about this project. Contact immediately!",
-        image: "images/forgotten.png"
+        image: "../images/forgotten.png"
     }
 ];
 
