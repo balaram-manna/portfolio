@@ -1,0 +1,458 @@
+/* =========================================================
+   MAINTENANCE PAGE
+========================================================= */
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+    --dark-color: #171b22;
+    --border-color: rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   MAIN PAGE
+========================================================= */
+
+.maintenance-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.maintenance-header {
+    width: 100%;
+    min-height: 8rem;
+    padding: 0 7%;
+    background: #1b2028;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+    color: var(--text-color);
+    font-size: 2.6rem;
+    font-weight: 700;
+    cursor: default;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.back-home {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 1.6rem;
+    border: 1px solid rgba(0, 238, 255, 0.3);
+    border-radius: 0.8rem;
+    transition: 0.3s ease;
+}
+
+.back-home i {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.back-home:hover {
+    background: var(--main-color);
+    color: var(--dark-color);
+    box-shadow: 0 0 1.5rem var(--main-color);
+}
+
+.back-home:hover i {
+    color: var(--dark-color);
+}
+
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.maintenance-container {
+    width: min(110rem, 90%);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+
+/* =========================================================
+   PROJECT INFORMATION
+========================================================= */
+
+.project-info {
+    max-width: 80rem;
+}
+
+.maintenance-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: var(--main-color);
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.maintenance-label i {
+    font-size: 2rem;
+}
+
+#project-name {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.maintenance-message {
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: #c8cbd1;
+    max-width: 65rem;
+    margin: auto;
+}
+
+
+/* =========================================================
+   ANIMATION CONTAINER
+========================================================= */
+
+.animation-container {
+    width: min(80rem, 100%);
+    height: 32rem;
+    margin: 4rem auto 3rem;
+    background: var(--second-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.progress-section {
+    width: min(65rem, 90%);
+    margin-bottom: 3rem;
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#progress-value {
+    color: var(--main-color);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 1rem;
+    background: #191e25;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: var(--main-color);
+    border-radius: inherit;
+    box-shadow: 0 0 1.2rem var(--main-color);
+    transition: width 1s ease;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.maintenance-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.home-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 1.2rem 2.2rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.home-btn {
+    background: var(--main-color);
+    color: var(--dark-color);
+    box-shadow: 0 0 1.5rem rgba(0, 238, 255, 0.4);
+}
+
+.home-btn:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0 2rem var(--main-color);
+}
+
+.home-btn {
+    font-size: 1.8rem;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.maintenance-footer {
+    margin-top: auto;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    background: #1b2028;
+    border-top: 1px solid var(--border-color);
+}
+
+.maintenance-footer p {
+    font-size: 1.4rem;
+    color: #c8cbd1;
+}
+
+
+/* =========================================================
+   ANIMATION AREA - GENERAL
+========================================================= */
+
+.animation-object {
+    position: absolute;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+    .maintenance-header {
+        padding: 0 4%;
+        min-height: 7rem;
+    }
+
+    .logo {
+        font-size: 2.2rem;
+    }
+
+    .back-home {
+        font-size: 1.3rem;
+        padding: 0.8rem 1.2rem;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .back-home i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        line-height: 1;
+    }
+
+    .maintenance-container {
+        width: 92%;
+        padding: 4rem 0;
+    }
+
+    .maintenance-message {
+        font-size: 1.5rem;
+    }
+
+    .animation-container {
+        height: 25rem;
+        margin-top: 3rem;
+        overflow: hidden;
+    }
+
+    .progress-section {
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .maintenance-header {
+        padding: 0 2rem;
+    }
+
+    .back-home {
+        width: 5rem;
+        position: relative;
+        height: 5rem;
+        padding: 0;
+        font-size: 0;
+        display: block;
+        margin: 0;
+    }
+
+    .back-home i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+        display: block;
+        font-size: 2.2rem;
+        line-height: 1;
+    }
+
+    .maintenance-container {
+        width: 94%;
+        padding: 3rem 0;
+    }
+
+    .maintenance-label {
+        font-size: 1.1rem;
+    }
+
+    #project-name {
+        font-size: 3.2rem;
+    }
+
+    .maintenance-message {
+        font-size: 1.4rem;
+        padding: 0 1rem;
+    }
+
+    .animation-container {
+        height: 20rem;
+        border-radius: 1.5rem;
+        margin-top: 2.5rem;
+        overflow: hidden;
+    }
+
+    .progress-section {
+        width: 100%;
+    }
+
+    .progress-header {
+        font-size: 1.3rem;
+    }
+
+    .maintenance-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .home-btn {
+        width: min(25rem, 90%);
+    }
+
+    .maintenance-footer p {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* =========================================================
+   STATIC MAINTENANCE IMAGE
+========================================================= */
+
+.animation-container .scene {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.animation-container .scene img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    animation: imageFloat 8s ease-in-out infinite alternate;
+}
+
+.scene-title {
+    width: min(80rem, 100%);
+    margin: -1.5rem auto 3rem;
+    text-align: center;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+@keyframes imageFloat {
+    0%, 100% {
+        transform: scale(1.08) translateX(-0.3rem);
+    }
+    50% {
+        transform: scale(1.08) translateX(0.3rem);
+    }
+}
+
